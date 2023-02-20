@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+
+  char strings[5][100];
+  int count;
+
+  printf("\n");
+  for (count = 0; count < 5; count++) {
+    printf("Digite uma string: ");
+    gets(strings[count]);
+  }
+  printf("\n\nAs strings que voce digitou foram:\n\n");
+  for (count = 0; count < 5; count++)
+    printf("[%d]: %s\n", count + 1, strings[count]);
+  main();
+  return 0;
+}
